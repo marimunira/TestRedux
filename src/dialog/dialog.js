@@ -4,7 +4,7 @@ export  class Dialog extends Component {
   render() {
     if (this.props.isopen) {
       return (<div>
-        <p>Delete post {this.props.name}?</p>
+        <p>Delete  {this.props.content}?</p>
         <button onClick={() => this.props.onSubmitClick(this.props.id)}>Yes</button>
         <button onClick={() => this.props.onCancelClick()}>Nope</button>
       </div>)

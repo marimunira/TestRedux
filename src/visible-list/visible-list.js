@@ -12,8 +12,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onElemClick: (id) => {
-      dispatch(show(id))
+    onElemClick: (id, name) => {
+      dispatch(show(id, name))
     }
   }
 }

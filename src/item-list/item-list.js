@@ -8,7 +8,7 @@ export class ItemList extends Component {
                 <Item
                     key={item.id}
                     name={item.name}
-                    clicker={() => this.props.onElemClick(item.id)}
+                    clicker={() => this.props.onElemClick(item.id, item.name)}
                 />
             )}
         </ul>
